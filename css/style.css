@@ -179,7 +179,8 @@ h1, h2, h3 { line-height: 1.08; letter-spacing: -0.035em; }
 
 @media (max-width: 760px) {
   .container { width: min(calc(100% - 2rem), var(--max-width)); }
-  .site-header { color: var(--ink); background: rgba(242,241,237,.96); box-shadow: 0 1px 0 var(--line); backdrop-filter: blur(14px); }
+  .site-header { color: var(--ink); background: rgba(242,241,237,.96); box-shadow: 0 1px 0 var(--line); }
+  .site-header.scrolled { backdrop-filter: none; }
   .navbar { min-height: 4.6rem; }
   .menu-toggle { display: block; z-index: 2; }
   .menu-toggle[aria-expanded="true"] span:nth-child(2) { transform: translateY(4px) rotate(45deg); }
