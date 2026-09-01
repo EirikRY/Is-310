@@ -208,6 +208,10 @@ h1, h2, h3 { line-height: 1.08; letter-spacing: -0.035em; }
   .hero-lead { overflow-wrap: anywhere; }
   .hero-actions { align-items: flex-start; flex-direction: column; gap: 1.1rem; }
   .hero-photo { width: 100%; max-width: 100%; }
+  .photo-zoom { top: 0.7rem; left: 0.7rem; display: grid; place-items: center; width: 2.25rem; height: 2.25rem; padding: 0; border-radius: 50%; font-size: 0; }
+  .photo-zoom::before { content: "⛶"; font-size: 0.85rem; }
+  .availability { top: 0.7rem; right: 0.7rem; gap: 0.4rem; padding: 0.35rem 0.55rem; font-size: 0.54rem; letter-spacing: 0.055em; }
+  .availability span { width: 0.42rem; height: 0.42rem; box-shadow: 0 0 0 0.22rem rgba(223,228,235,.11); }
   .section-top { grid-template-columns: 1fr; gap: 1rem; }
   .section-top > p { margin-left: 0; }
   .member-grid { grid-template-columns: 1fr; }
