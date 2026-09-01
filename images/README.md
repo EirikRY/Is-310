@@ -8,4 +8,6 @@ Oppdater deretter `src` på de seks profilbildene i `index.html`, for eksempel:
 <img src="images/fornavn-etternavn.webp" alt="Fornavn Etternavn">
 ```
 
-De seks SVG-filene i mappen er bare midlertidige plassholdere og kan slettes når alle ekte bilder er lagt inn.
+`group-photo-v2.jpg` brukes som hovedbilde i hero-seksjonen. `eirik-ryger.jpg` og `hussein-akbar.jpg` brukes på de respektive medlemskortene.
+
+SVG-filene i mappen er midlertidige plassholdere og kan slettes etter hvert som de resterende profilbildene blir lagt inn.

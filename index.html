@@ -49,20 +49,15 @@
           </div>
         </div>
 
-        <aside class="hero-panel reveal" aria-label="Kort om gruppen">
+        <figure class="hero-photo reveal" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="group-photo-lightbox" aria-label="Åpne gruppebildet i stor visning">
+          <img src="images/group-photo-v2.jpg" alt="De seks studentene i Gruppe 17 samlet utendørs under et tre" width="1552" height="1013" fetchpriority="high" decoding="async">
           <div class="availability"><span></span> Åpne for samarbeid</div>
-          <p class="panel-kicker">Bachelorgruppe</p>
-          <strong class="member-count">06</strong>
-          <p>studenter med ulike styrker,<br>samlet rundt ett prosjekt.</p>
-          <div class="avatar-row" aria-hidden="true">
-            <img src="images/student-1.svg" alt="">
-            <img src="images/student-2.svg" alt="">
-            <img src="images/student-3.svg" alt="">
-            <img src="images/student-4.svg" alt="">
-            <img src="images/student-5.svg" alt="">
-            <img src="images/student-6.svg" alt="">
-          </div>
-        </aside>
+          <figcaption>
+            <span>Gruppe 17</span>
+            <strong>Seks studenter. Én felles retning.</strong>
+          </figcaption>
+          <span class="photo-zoom" aria-hidden="true">⛶ Vis stort</span>
+        </figure>
       </div>
     </section>
 
@@ -91,20 +86,20 @@
             <p class="eyebrow dark"><span></span> Gruppen</p>
             <h2 id="members-title">Menneskene bak prosjektet</h2>
           </div>
-          <p><span class="placeholder-label">Mangler fortsatt</span> Legg inn profilbilder og eventuelle LinkedIn- og GitHub-lenker når dere er klare.</p>
+          <p><span class="placeholder-label">Mangler fortsatt</span> Legg inn profilbilder for fire medlemmer og eventuelle LinkedIn- og GitHub-lenker når dere er klare.</p>
         </div>
 
         <!-- PLACEHOLDER: Kopier eller slett et article-element hvis gruppestørrelsen endres. -->
         <div class="member-grid">
           <article class="member-card reveal">
-            <div class="member-image"><img src="images/student-1.svg" alt="Plassholderbilde for Hossein Akbar"></div>
+            <div class="member-image"><img class="profile-portrait" src="images/hussein-akbar.jpg" alt="Hussein Akbar" width="1086" height="1448" loading="lazy" decoding="async"></div>
             <div class="member-body">
               <p class="member-number">01 / 06</p>
-              <h3>Hossein Akbar</h3>
+              <h3>Hussein Akbar</h3>
               <p class="member-role">Frontend- og backendutvikling</p>
               <p class="member-bio">Jeg har bygget grunnleggende utviklingskompetanse gjennom studiet og arbeider selvstendig med Codecademy og LeetCode for å utvikle meg videre. Jeg er spesielt interessert i systemutvikling og AI, og bidrar med teknisk nysgjerrighet og sterk læringsvilje.</p>
               <ul class="tags" aria-label="Ferdigheter og interesser"><li>C#</li><li>Python</li><li>Systemutvikling</li><li>AI</li></ul>
-              <div class="member-links"><span class="placeholder-link">[LinkedIn-lenke]</span><span class="placeholder-link">[GitHub-lenke]</span></div>
+              <div class="member-links"><a href="https://www.linkedin.com/in/hussein-razzaqi-90972220b/" target="_blank" rel="noopener noreferrer">LinkedIn</a><span class="placeholder-link">[GitHub-lenke]</span></div>
             </div>
           </article>
 
@@ -121,7 +116,7 @@
           </article>
 
           <article class="member-card reveal">
-            <div class="member-image"><img src="images/student-3.svg" alt="Plassholderbilde for Eirik Ryger"></div>
+            <div class="member-image"><img class="profile-portrait" src="images/eirik-ryger.jpg" alt="Eirik Ryger" width="1086" height="1448" loading="lazy" decoding="async"></div>
             <div class="member-body">
               <p class="member-number">03 / 06</p>
               <h3>Eirik Ryger</h3>
@@ -245,5 +240,10 @@
       <a href="#top">Til toppen ↑</a>
     </div>
   </footer>
+
+  <div class="lightbox" id="group-photo-lightbox" role="dialog" aria-modal="true" aria-label="Gruppebilde i stor visning" hidden>
+    <button class="lightbox-close" type="button" aria-label="Lukk stor visning">×</button>
+    <img src="images/group-photo-v2.jpg" alt="De seks studentene i Gruppe 17 samlet utendørs under et tre" width="1552" height="1013">
+  </div>
 </body>
 </html>

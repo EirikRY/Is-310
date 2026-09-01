@@ -65,3 +65,37 @@ window.addEventListener('resize', () => {
   if (window.innerWidth > 760) closeMenu();
 });
 updateNavigation();
+
+// Stor visning av gruppebildet.
+const groupPhoto = document.querySelector('.hero-photo');
+const lightbox = document.querySelector('#group-photo-lightbox');
+const lightboxClose = lightbox.querySelector('.lightbox-close');
+
+function openLightbox() {
+  lightbox.hidden = false;
+  document.body.classList.add('lightbox-open');
+  lightboxClose.focus();
+}
+
+function closeLightbox() {
+  if (lightbox.hidden) return;
+  lightbox.hidden = true;
+  document.body.classList.remove('lightbox-open');
+  groupPhoto.focus();
+}
+
+groupPhoto.addEventListener('click', openLightbox);
+groupPhoto.addEventListener('keydown', (event) => {
+  if (event.key === 'Enter' || event.key === ' ') {
+    event.preventDefault();
+    openLightbox();
+  }
+});
+
+lightboxClose.addEventListener('click', closeLightbox);
+lightbox.addEventListener('click', (event) => {
+  if (event.target === lightbox) closeLightbox();
+});
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') closeLightbox();
+});
