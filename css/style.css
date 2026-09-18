@@ -130,8 +130,7 @@ h1, h2, h3 { line-height: 1.08; letter-spacing: -0.035em; }
 .tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: auto 0 1.2rem; padding: 1.2rem 0 0; list-style: none; }
 .tags li { padding: 0.28rem 0.55rem; color: var(--ink-soft); background: rgba(52,76,107,.1); border-radius: 0.3rem; font-size: 0.67rem; font-weight: 700; }
 .member-links { display: flex; gap: 1rem; padding-top: 1rem; border-top: 1px solid var(--line); }
-.member-links a, .placeholder-link { font-size: 0.76rem; font-weight: 750; text-underline-offset: 0.25rem; }
-.placeholder-link { color: var(--muted); }
+.member-links a { font-size: 0.76rem; font-weight: 750; text-underline-offset: 0.25rem; }
 
 .focus-section { color: var(--white); background: var(--ink); }
 .focus-section .section-top > p { color: rgba(255,255,255,.6); }
