@@ -160,7 +160,7 @@ h1, h2, h3 { line-height: 1.08; letter-spacing: -0.035em; }
 .contact-section { position: relative; overflow: hidden; padding: clamp(5rem, 10vw, 9rem) 0; color: var(--white); background: var(--ink-soft); }
 .contact-section::after { content: ""; position: absolute; width: 30rem; height: 30rem; right: -12rem; bottom: -18rem; border: 6rem solid rgba(52,76,107,.72); border-radius: 50%; }
 .contact-layout { position: relative; z-index: 1; display: grid; grid-template-columns: 1.35fr 0.65fr; gap: 4rem; align-items: end; }
-.contact-section h2 { max-width: 15ch; margin: 0; font-size: clamp(2.8rem, 6vw, 5.5rem); }
+.contact-section h2 { max-width: 15ch; margin: 0; font-size: clamp(2.6rem, 5.5vw, 5rem); }
 .contact-actions { display: flex; flex-direction: column; align-items: flex-start; gap: 1.3rem; }
 .button-light { width: 100%; color: var(--ink); background: var(--white); }
 .light-link { color: var(--white); }
