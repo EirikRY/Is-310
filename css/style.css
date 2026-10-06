@@ -69,7 +69,7 @@ h1, h2, h3 { line-height: 1.08; letter-spacing: -0.035em; }
 .hero .container { width: min(calc(100% - 4rem), 1480px); }
 .hero-layout { position: relative; display: grid; grid-template-columns: 0.95fr 1.05fr; gap: clamp(2.5rem, 5vw, 5rem); align-items: center; padding-top: 7rem; padding-bottom: 5rem; }
 .hero-layout > * { min-width: 0; }
-.promo-video { grid-column: 1 / -1; width: 100%; max-width: 960px; margin-inline: auto; }
+.promo-video { width: 100%; }
 .promo-video video { display: block; width: 100%; max-height: 70svh; aspect-ratio: 16 / 9; object-fit: contain; background: #000; border: 1px solid rgba(255,255,255,.16); border-radius: .75rem; }
 .eyebrow { display: flex; align-items: center; gap: 0.65rem; margin-bottom: 1.4rem; color: rgba(255,255,255,.7); font-size: 0.74rem; font-weight: 750; letter-spacing: 0.14em; text-transform: uppercase; }
 .eyebrow span { width: 1.6rem; height: 1px; background: var(--lime); }
@@ -104,6 +104,8 @@ h1, h2, h3 { line-height: 1.08; letter-spacing: -0.035em; }
 .split-layout { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: clamp(3rem, 8vw, 9rem); }
 .section h2 { margin-bottom: 1.5rem; font-size: clamp(2.5rem, 5vw, 5rem); font-weight: 610; }
 .intro-copy { padding-top: 3rem; }
+.about-photo-wrap { margin-top: clamp(2rem, 5vw, 4rem); }
+.about-photo-wrap .about-photo { width: 100%; max-width: 960px; margin-inline: auto; aspect-ratio: 1552 / 1013; }
 .intro-copy .large-copy { margin-bottom: 1.5rem; color: var(--ink); font-size: clamp(1.35rem, 2.4vw, 1.9rem); line-height: 1.45; letter-spacing: -0.02em; }
 .intro-copy > p:not(.large-copy) { max-width: 42rem; color: var(--muted); }
 .placeholder-label { display: inline-block; margin-right: 0.4rem; padding: 0.12rem 0.42rem; vertical-align: 0.18em; color: #7b3e00; background: #fff0c2; border: 1px solid #e6c56d; border-radius: 0.3rem; font-size: 0.6rem; font-weight: 800; letter-spacing: 0.08em; line-height: 1.4; text-transform: uppercase; }

@@ -36,14 +36,6 @@
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-glow" aria-hidden="true"></div>
       <div class="container hero-layout">
-        <!-- Promovideoen vises først. Besøkende starter avspillingen selv. -->
-        <div class="promo-video">
-          <p class="eyebrow">Bli kjent med Gruppe 17</p>
-          <video controls playsinline preload="metadata" poster="images/group-photo-v2.jpg" aria-label="Promovideo for Gruppe 17">
-            <source src="videos/gruppevideo.mp4" type="video/mp4">
-            Nettleseren din støtter ikke videoavspilling. <a href="videos/gruppevideo.mp4">Åpne gruppevideoen</a>.
-          </video>
-        </div>
         <div class="hero-copy reveal">
           <p class="eyebrow"><span></span> Bachelorprosjekt · UiA · 2026</p>
           <!-- PLACEHOLDER: Bytt gruppenavn og introduksjon. -->
@@ -53,13 +45,14 @@
           </div>
         </div>
 
-        <figure class="hero-photo reveal" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="group-photo-lightbox" aria-label="Åpne gruppebildet i stor visning">
-          <img src="images/group-photo-v2.jpg" alt="De seks studentene i Gruppe 17 samlet utendørs under et tre" width="1552" height="1013" fetchpriority="high" decoding="async">
-          <figcaption>
-            <span>Gruppe 17</span>
-          </figcaption>
-          <span class="photo-zoom" aria-hidden="true">⛶ Utvid</span>
-        </figure>
+        <!-- Besøkende starter videoen selv, med lyd og fullskjerm tilgjengelig. -->
+        <div class="promo-video">
+          <p class="eyebrow">Bli kjent med Gruppe 17</p>
+          <video controls playsinline preload="metadata" poster="images/group-photo-v2.jpg" aria-label="Promovideo for Gruppe 17">
+            <source src="videos/gruppevideo.mp4" type="video/mp4">
+            Nettleseren din støtter ikke videoavspilling. <a href="videos/gruppevideo.mp4">Åpne gruppevideoen</a>.
+          </video>
+        </div>
       </div>
     </section>
 
@@ -73,6 +66,13 @@
           <p class="large-copy">Vi er seks IT-studenter med ulike styrker og et felles ønske om å skape en løsning som gir reell verdi.</p>
           <p>Gjennom studiet har vi fått erfaring med utvikling, design, prosjektarbeid og problemløsning. I bachelorprosjektet ønsker vi å bruke denne bredden til å utforske, utvikle og levere en løsning som er verdifull for vår samarbeidspartner.</p>
         </div>
+      </div>
+      <div class="container about-photo-wrap">
+        <figure class="hero-photo about-photo reveal" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="group-photo-lightbox" aria-label="Åpne gruppebildet i stor visning">
+          <img src="images/group-photo-v2.jpg" alt="De seks studentene i Gruppe 17 samlet utendørs under et tre" width="1552" height="1013" loading="lazy" decoding="async">
+          <figcaption><span>Gruppe 17 · Universitetet i Agder</span></figcaption>
+          <span class="photo-zoom" aria-hidden="true">⛶ Utvid</span>
+        </figure>
       </div>
     </section>
 
